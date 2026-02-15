@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  /* Boje */
+  --color-navy: #1a2d44;
+  --color-navy-light: #243650;
+  --color-gold: #e8941a;
+  --color-gold-dark: #c97e10;
+  --color-gold-light: #f5a83a;
+  --color-bg-light: #f8f6f2;
+  --color-bg-white: #ffffff;
+  --color-text-dark: #1a2d44;
+  --color-text-gray: #6b7280;
+  --color-border: #e5e0d8;
+
+  /* Fontovi */
+  --font-heading: var(--font-montserrat), "Montserrat", sans-serif;
+  --font-body: var(--font-open-sans), "Open Sans", sans-serif;
+
+  /* Breakpoints (nasleđeni) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Slider transition */
+.slide-enter {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.slide-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-exit {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Section padding utility */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Gold underline heading */
+.heading-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(26, 45, 68, 0.15);
+}
+
+/* Process step line */
+.process-line::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: calc(50% + 28px);
+  width: calc(100% - 56px);
+  height: 2px;
+  background: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+}
+
+@media (max-width: 768px) {
+  .process-line::after {
+    display: none;
+  }
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  animation: pulse-wa 2s infinite;
+}
+
+@keyframes pulse-wa {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+}
+
+/* Stat counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stat-item {
+  animation: countUp 0.6s ease forwards;
+}
+
+/* Form inputs */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(232, 148, 26, 0.15);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-gold);
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.025em;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: 2px solid white;
+  cursor: pointer;
+  letter-spacing: 0.025em;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
