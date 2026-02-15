@@ -9,12 +9,14 @@ interface Props {
   className?: string;
 }
 
+const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (delay: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1], delay },
+    transition: { duration: 0.65, ease: EASE, delay },
   }),
 };
 
@@ -36,7 +38,7 @@ const staggerItem = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, ease: EASE },
   },
 };
 
@@ -66,7 +68,7 @@ export function SlideIn({
       initial={{ opacity: 0, x: direction === "left" ? -50 : 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay }}
+      transition={{ duration: 0.65, ease: EASE, delay }}
       className={className}
     >
       {children}
