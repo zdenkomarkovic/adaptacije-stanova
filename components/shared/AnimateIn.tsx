@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 
 interface Props {
@@ -11,45 +11,27 @@ interface Props {
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (delay: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.65, ease: EASE, delay },
-  }),
-};
-
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: (delay: number) => ({
-    opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut", delay },
-  }),
-};
-
-const staggerContainer = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
-};
-
-const staggerItem = {
-  hidden: { opacity: 0, y: 35 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: EASE },
-  },
-};
-
 export function FadeUp({ children, delay = 0, className = "" }: Props) {
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      custom={delay}
-      variants={fadeUp}
+      transition={{ duration: 0.65, ease: EASE, delay }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export function FadeIn({ children, delay = 0, className = "" }: Props) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, ease: EASE, delay }}
       className={className}
     >
       {children}
@@ -76,20 +58,19 @@ export function SlideIn({
   );
 }
 
-export function FadeIn({ children, delay = 0, className = "" }: Props) {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
-      custom={delay}
-      variants={fadeIn}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
+const staggerContainer: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+};
+
+const staggerItem: Variants = {
+  hidden: { opacity: 0, y: 35 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: EASE },
+  },
+};
 
 export function StaggerContainer({ children, className = "" }: Omit<Props, "delay">) {
   return (
