@@ -165,7 +165,7 @@ export default function GallerySection() {
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              src={images[lightbox]}
+              src={images[lightbox]!}
               alt={`Radovi ${lightbox + 1}`}
               width={1200}
               height={900}
