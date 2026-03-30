@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/metadata";
 import { CONTACT } from "@/lib/constants";
-import { FadeUp, FadeIn, SlideIn, StaggerContainer, StaggerItem } from "@/components/shared/AnimateIn";
+import {
+  FadeUp,
+  FadeIn,
+  SlideIn,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/shared/AnimateIn";
 
 export const metadata = buildMetadata({
   title: "Usluge",
@@ -30,8 +36,7 @@ const services = [
       "Terase i balkoni",
       "Podne grejanje ispod keramike",
     ],
-    image:
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&q=80&auto=format&fit=crop",
+    image: "/IMG-4d76fc00e9f08992092d17882ea64ba6-V.webp",
   },
   {
     id: "voda",
@@ -52,8 +57,7 @@ const services = [
       "Otklanjanje curenja i havarija",
       "Radijatorsko grejanje",
     ],
-    image:
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80&auto=format&fit=crop",
+    image: "/2150721533.webp",
   },
   {
     id: "struja",
@@ -74,8 +78,7 @@ const services = [
       "Ugradnja klima uređaja",
       "Atest elektroinstalacija",
     ],
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop",
+    image: "/7329.webp",
   },
   {
     id: "moler",
@@ -96,8 +99,30 @@ const services = [
       "Krpljenje pukotina i sanacija zidova",
       "Fasadni malteri i obloge",
     ],
-    image:
-      "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=800&q=80&auto=format&fit=crop",
+
+    image: "/IMG-36af01bc82cf4a2fabd3ddff8fa51afe-V.webp",
+  },
+  {
+    id: "rusenje",
+    title: "Rušenje i Razbijanje",
+    subtitle: "Brzo, povoljno, profesionalnim mašinama",
+    description: `Specijalizovani smo za obavljanje svih vrsta rušilačkih poslova — od razbijanja pločica u kupatilu do rušenja celih objekata.
+    Koristimo profesionalne električne i pneumatske mašine koje obezbeđuju brz, čist i bezbedan rad.
+
+    Posebno smo ponosni na sposobnost rada na zahtevnim pozicijama i visinama — mestima na kojima drugi ekipe odbijaju da rade.
+    Nudimo kompletnu uslugu sa odvozom šuta i ostavljamo spreman prostor za sledeću fazu radova.`,
+    features: [
+      "Razbijanje keramičkih pločica",
+      "Rušenje pregradnih zidova",
+      "Kompletno pražnjenje kupatila",
+      "Razbijanje asfalta i betona",
+      "Rušenje manjih objekata i garaža",
+      "Rad na zahtevnim visinama",
+      "Odvoz šuta i materijala",
+      "Uređenje terena nakon rušenja",
+    ],
+    image: "/rusenje/IMG-3b075a7a306d90e829219ca2dd664380-V.webp",
+    extraLink: "/rusenje",
   },
 ];
 
@@ -115,8 +140,8 @@ export default function UslugePage() {
               Naše Usluge
             </h1>
             <p className="text-white/60 font-body text-lg max-w-2xl mx-auto">
-              Sve usluge potrebne za kompletnu adaptaciju stana pod jednim krovom.
-              Jedan tim, jedna odgovornost, jedan dogovor.
+              Sve usluge potrebne za kompletnu adaptaciju stana pod jednim krovom. Jedan tim, jedna
+              odgovornost, jedan dogovor.
             </p>
           </FadeUp>
         </div>
@@ -127,8 +152,18 @@ export default function UslugePage() {
         <div className="bg-gold">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3 text-navy">
-              <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+              <svg
+                className="w-6 h-6 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+                />
               </svg>
               <span className="font-heading font-bold text-base">
                 Sistem ključ u ruke — kompletna adaptacija bez vaše brige
@@ -189,8 +224,16 @@ export default function UslugePage() {
                     {service.features.map((f) => (
                       <StaggerItem key={f}>
                         <div className="flex items-center gap-2.5 text-sm text-navy font-body">
-                          <svg className="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          <svg
+                            className="w-4 h-4 text-gold flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           {f}
                         </div>
@@ -198,12 +241,32 @@ export default function UslugePage() {
                     ))}
                   </StaggerContainer>
 
-                  <Link href="/kontakt" className="btn-primary inline-flex">
-                    Zatražite ponudu
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
+                  <div className="flex flex-wrap gap-3">
+                    <Link href="/kontakt" className="btn-primary inline-flex">
+                      Zatražite ponudu
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </Link>
+                    {"extraLink" in service && service.extraLink && (
+                      <Link
+                        href={service.extraLink as string}
+                        className="inline-flex items-center gap-2 border-2 border-navy text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy hover:text-white transition-colors"
+                      >
+                        Saznaj više
+                      </Link>
+                    )}
+                  </div>
                 </SlideIn>
               </div>
             );
@@ -218,14 +281,17 @@ export default function UslugePage() {
             Sistem Ključ u Ruke
           </h2>
           <p className="text-text-gray font-body text-lg leading-relaxed mb-8">
-            Kombinujemo sve naše usluge u jedan paket. Vi ne morate da koordinišete
-            različite majstore — to radimo mi. Jedan dogovor, jedan rok, jedna cena.
+            Kombinujemo sve naše usluge u jedan paket. Vi ne morate da koordinišete različite
+            majstore — to radimo mi. Jedan dogovor, jedan rok, jedna cena.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt" className="btn-primary text-base">
               Besplatna procena
             </Link>
-            <a href={CONTACT.phoneHref} className="inline-flex items-center gap-2 border-2 border-navy text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy hover:text-white transition-colors justify-center">
+            <a
+              href={CONTACT.phoneHref}
+              className="inline-flex items-center gap-2 border-2 border-navy text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy hover:text-white transition-colors justify-center"
+            >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>

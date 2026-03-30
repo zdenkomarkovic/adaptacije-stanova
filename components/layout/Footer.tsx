@@ -9,6 +9,7 @@ const services = [
   { label: "Molersko-gipsarski radovi", href: "/usluge#moler" },
   { label: "Kompletna adaptacija", href: "/usluge" },
   { label: "Sistem ključ u ruke", href: "/usluge" },
+  { label: "Rušenje i razbijanje", href: "/rusenje" },
 ];
 
 export default function Footer() {
@@ -105,11 +106,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href={CONTACT.phoneHref}
-                  className="flex items-start gap-3 text-white/60 hover:text-gold transition-colors group"
-                >
-                  <div className="w-9 h-9 rounded-lg bg-white/10 group-hover:bg-gold/20 flex items-center justify-center flex-shrink-0 transition-colors mt-0.5">
+                <div className="flex items-start gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 transition-colors mt-0.5">
                     <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
@@ -118,9 +116,10 @@ export default function Footer() {
                     <div className="text-xs text-white/40 font-body mb-0.5">
                       Telefon / Viber / WhatsApp
                     </div>
-                    <div className="text-sm font-semibold font-heading">{CONTACT.phone}</div>
+                    <a href={CONTACT.phoneHref} className="block text-sm font-semibold font-heading text-white/60 hover:text-gold transition-colors">{CONTACT.phone}</a>
+                    <a href={CONTACT.phoneHref2} className="block text-sm font-semibold font-heading text-white/60 hover:text-gold transition-colors">{CONTACT.phone2}</a>
                   </div>
-                </a>
+                </div>
               </li>
               <li>
                 <a
@@ -152,7 +151,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <div className="text-xs text-white/40 font-body mb-0.5">Područje rada</div>
-                    <div className="text-sm text-white/60 font-body">Srbija</div>
+                    <div className="text-sm text-white/60 font-body">Niš i okolina</div>
                   </div>
                 </div>
               </li>
@@ -164,13 +163,13 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="text-white/40 text-xs font-body text-center">
+          <p className="text-white/70 text-xs font-body text-center">
             &copy; {new Date().getFullYear()} Adaptacije Stanova. Sva prava zadržana.
           </p>
-          <p className="text-white/30 text-xs font-body text-center">
+          <p className="text-white/60 text-xs font-body text-center">
             Poštujemo rokove &bull; Garantujemo kvalitet
           </p>
-          <p className="text-white/30 text-xs font-body text-center">
+          <p className="text-white/60 text-xs font-body text-center">
             Izrada sajta:{" "}
             <a
               href="https://manikamwebsolutions.com/sr"

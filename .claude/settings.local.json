@@ -4,7 +4,12 @@
       "Bash(dir:*)",
       "Bash(node --version:*)",
       "Bash(npm:*)",
-      "WebFetch(domain:handyman.rs)"
+      "WebFetch(domain:handyman.rs)",
+      "Bash(ls F:/sajtovi/adaptacije-stanova/public/IMG-*.jpg)",
+      "Bash(ls F:/sajtovi/adaptacije-stanova/public/*.jpg)",
+      "Bash(ls F:/sajtovi/adaptacije-stanova/public/rusenje/*.jpg)",
+      "Bash(node -e \"require\\(''sharp''\\); console.log\\(''ok''\\)\")",
+      "Bash(cd:*)"
     ]
   }
 }

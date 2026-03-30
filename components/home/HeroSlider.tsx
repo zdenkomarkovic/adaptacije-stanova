@@ -6,33 +6,9 @@ import Link from "next/link";
 import { CONTACT } from "@/lib/constants";
 
 const slides = [
-  {
-    id: 1,
-    image:
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80&auto=format&fit=crop",
-    title: "Kompletna Adaptacija Stanova Beograd",
-    subtitle: "Sistem ključ u ruke",
-    description:
-      "Vaš stan od ideje do gotovog rezultata. Koordinišemo sve zanate, poštujemo dogovorene rokove i budžet.",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80&auto=format&fit=crop",
-    title: "Renoviranje Kupatila",
-    subtitle: "Keramika, voda, elektrika",
-    description:
-      "Kompletno renoviranje kupatila – od hidroizolacije i keramike do sanitarija i elektroinstalacija.",
-  },
-  {
-    id: 3,
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80&auto=format&fit=crop",
-    title: "Molerski i Gipsarski Radovi",
-    subtitle: "Glattung, gletovanje, farbanje",
-    description:
-      "Savršeno ravni zidovi i plafoni. Gipsarsko-molerski radovi uz primenu najkvalitetnijih materijala.",
-  },
+  { id: 1, image: "/IMG-08e5727321da0199934e6668bb0c869d-V.webp" },
+  { id: 2, image: "/IMG-14adc5bb87aad487c01c7491781c26ac-V.webp" },
+  { id: 3, image: "/IMG-190e43b8c098732cd945e3d3df001eb1-V.webp" },
 ];
 
 export default function HeroSlider() {
@@ -70,7 +46,7 @@ export default function HeroSlider() {
         >
           <Image
             src={slide.image}
-            alt={slide.title}
+            alt="Renoviranje i adaptacija stanova i kuća Niš"
             fill
             className={`object-cover transition-transform duration-[6000ms] ${
               idx === current ? "scale-110" : "scale-100"
@@ -78,7 +54,6 @@ export default function HeroSlider() {
             priority={idx === 0}
             sizes="100vw"
           />
-          {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/60 to-transparent" />
         </div>
       ))}
@@ -91,26 +66,19 @@ export default function HeroSlider() {
             <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
               <span className="text-gold text-sm font-heading font-semibold">
-                {slides[current]?.subtitle}
+                Sistem ključ u ruke
               </span>
             </div>
 
             {/* Title */}
-            <h1
-              key={`title-${current}`}
-              className="font-heading font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-5"
-              style={{ animation: "countUp 0.7s ease" }}
-            >
-              {slides[current]?.title}
+            <h1 className="font-heading font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-5">
+              Renoviranje i Adaptacija Stanova i Kuća Niš
             </h1>
 
             {/* Description */}
-            <p
-              key={`desc-${current}`}
-              className="text-white/80 text-lg sm:text-xl font-body leading-relaxed mb-9"
-              style={{ animation: "countUp 0.9s ease" }}
-            >
-              {slides[current]?.description}
+            <p className="text-white/80 text-lg sm:text-xl font-body leading-relaxed mb-9">
+              Vaš prostor od ideje do gotovog rezultata. Koordinišemo sve zanate, poštujemo
+              dogovorene rokove i budžet.
             </p>
 
             {/* CTA Buttons */}
@@ -118,12 +86,7 @@ export default function HeroSlider() {
               <Link href="/kontakt" className="btn-primary text-base">
                 Besplatna procena
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
               <a href={CONTACT.phoneHref} className="btn-outline text-base">

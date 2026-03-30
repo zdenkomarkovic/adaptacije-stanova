@@ -4,6 +4,7 @@ import ServicesSection from "@/components/home/ServicesSection";
 import ProcessSection from "@/components/home/ProcessSection";
 import StatsSection from "@/components/home/StatsSection";
 import CTABanner from "@/components/home/CTABanner";
+import GallerySection from "@/components/home/GallerySection";
 
 export const metadata = buildMetadata({
   title: "Adaptacije Stanova i Renoviranje Kupatila",
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HeroSlider />
       <ServicesSection />
       <StatsSection />
+      <GallerySection />
       <ProcessSection />
       <CTABanner />
     </>

@@ -6,13 +6,13 @@ import { FadeUp, SlideIn, StaggerContainer, StaggerItem } from "@/components/sha
 export const metadata = buildMetadata({
   title: "Kontakt",
   description:
-    "Kontaktirajte nas za besplatnu procenu adaptacije stana ili renoviranja kupatila. Telefon, Viber, WhatsApp: 065/3230-730.",
+    "Kontaktirajte nas za besplatnu procenu adaptacije stana ili renoviranja kupatila. Telefon, Viber, WhatsApp: 063/723-9440 ili 063/460-010.",
 });
 
 const contactCards = [
   {
     title: "Telefon",
-    value: CONTACT.phone,
+    value: `${CONTACT.phone} / ${CONTACT.phone2}`,
     href: CONTACT.phoneHref,
     desc: "Dostupni radnim danima 07–20h",
     icon: (
@@ -158,20 +158,20 @@ export default function KontaktPage() {
                   Obično odgovaramo u roku od <strong className="text-white">2 sata</strong> tokom
                   radnog vremena. Za hitne pozive, nazovite direktno.
                 </p>
-                <div className="hidden lg:block">
-                  <a href={CONTACT.phoneHref} className="btn-primary w-full justify-center mt-4 text-sm">
+                <div className="flex flex-col gap-2 mt-4">
+                  <a href={CONTACT.phoneHref} className="btn-primary w-full justify-center text-sm">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
                     {CONTACT.phone}
                   </a>
+                  <a href={CONTACT.phoneHref2} className="btn-primary w-full justify-center text-sm">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    {CONTACT.phone2}
+                  </a>
                 </div>
-                <a href={CONTACT.phoneHref} className="flex lg:hidden btn-primary w-full justify-center mt-4 text-sm">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  {CONTACT.phone}
-                </a>
               </div>
 
               {/* Promise */}
@@ -189,6 +189,22 @@ export default function KontaktPage() {
               </div>
             </SlideIn>
           </div>
+        </div>
+      </section>
+
+      {/* Mapa */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="rounded-2xl overflow-hidden shadow-md border border-border h-72 sm:h-96 w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93131.2!2d21.9462!3d43.3209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47520786d694e6a7%3A0x8c7b1b6c6e6c9a0!2sNi%C5%A1%2C%20Serbia!5e0!3m2!1sen!2srs!4v1"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Niš mapa"
+          />
         </div>
       </section>
     </>

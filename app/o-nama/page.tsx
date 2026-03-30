@@ -17,7 +17,12 @@ const values = [
       "Koristimo isključivo materijale priznatih proizvođača i primenjujemo proverene tehnike rada. Svaki detalj je bitan.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+        />
       </svg>
     ),
   },
@@ -27,7 +32,12 @@ const values = [
       "Rok je obaveza, ne preporuka. Planiramo radove detaljno i koordinišemo timove kako bismo uvek završili na vreme.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
   },
@@ -37,8 +47,18 @@ const values = [
       "Jasna i detaljna ponuda pre početka radova. Bez skrivenih troškova i iznenađenja. Ono što dogovorimo — to i platite.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+        />
       </svg>
     ),
   },
@@ -48,7 +68,12 @@ const values = [
       "Više od 10 godina radimo adaptacije stanova. Naš tim čine iskusni majstori specijalizovani za svaki zanat.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+        />
       </svg>
     ),
   },
@@ -58,7 +83,12 @@ const values = [
       "Jedan tim za sve zanate. Ne morate da tražite različite majstore — mi koordinišemo sve i preuzimamo odgovornost.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
   },
@@ -68,7 +98,12 @@ const values = [
       "Naš posao ne završava primopredajom. Stojimo iza svojih radova i dostupni smo ako se ikad pojavi bilo kakav problem.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+        />
       </svg>
     ),
   },
@@ -88,7 +123,7 @@ export default function ONamaPage() {
               O Nama
             </h1>
             <p className="text-white/60 font-body text-lg max-w-2xl mx-auto">
-              Više od 10 godina radimo adaptacije stanova i renoviranja kupatila u Srbiji. Upoznajte
+              Više od 10 godina radimo adaptacije stanova i renoviranja kupatila u Nišu. Upoznajte
               naš tim i vrednosti koje nas vode.
             </p>
           </FadeUp>
@@ -103,7 +138,7 @@ export default function ONamaPage() {
             <SlideIn direction="left" className="w-full lg:w-5/12 flex-shrink-0">
               <div className="relative h-80 sm:h-[440px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&auto=format&fit=crop"
+                  src="/IMG-44859e328521ed59309855965c6b7d46-V.webp"
                   alt="Naš tim na poslu"
                   fill
                   className="object-cover"
@@ -124,13 +159,13 @@ export default function ONamaPage() {
                 Naša priča
               </span>
               <h2 className="font-heading font-extrabold text-navy text-3xl sm:text-4xl mt-3 mb-5">
-                Adaptacije Stanova Beograd.
+                Adaptacije Stanova Niš.
               </h2>
               <div className="space-y-4 text-text-gray font-body text-base leading-relaxed">
                 <p>
                   Počeli smo kao mali tim majstora sa jednom jedinom misijom — da svakom klijentu
                   pružimo uslugu kakvu bi željeli za sopstveni dom. Tokom godina, izrasli smo u
-                  pouzdan tim specijalizovan za kompletne adaptacije stanova i renoviranje kupatila.
+                  pouzdan tim specijalizovan za kompletne adaptacije stanova.
                 </p>
                 <p>
                   Naša snaga leži u tome što pokrivamo sve zanate pod jednim krovom. Keramičari,
@@ -183,7 +218,9 @@ export default function ONamaPage() {
                     {v.icon}
                   </div>
                   <h3 className="font-heading font-bold text-navy text-lg mb-2">{v.title}</h3>
-                  <p className="text-text-gray font-body text-sm leading-relaxed">{v.description}</p>
+                  <p className="text-text-gray font-body text-sm leading-relaxed">
+                    {v.description}
+                  </p>
                 </div>
               </StaggerItem>
             ))}
@@ -205,7 +242,12 @@ export default function ONamaPage() {
             <Link href="/kontakt" className="btn-primary text-base">
               Pišite nam
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </div>

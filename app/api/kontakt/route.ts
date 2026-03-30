@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     const apiKey = process.env.MAILJET_API_KEY;
     const secretKey = process.env.MAILJET_SECRET_KEY;
     const sender = process.env.SITE_MAIL_SENDER ?? "noreply@adaptacije-stanova.com";
-    const receiver = process.env.SITE_MAIL_RECEIVER ?? "info@adaptacije-stanova.com";
+    const receiver = process.env.SITE_MAIL_RECEIVER ?? "pajakacar72@gmail.com";
 
     if (!apiKey || !secretKey) {
       console.error("Mailjet API keys nisu konfigurisani");
