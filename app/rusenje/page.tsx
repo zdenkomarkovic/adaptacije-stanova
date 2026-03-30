@@ -140,7 +140,7 @@ export default function RusenjePage() {
             <SlideIn direction="left" className="w-full lg:w-5/12 flex-shrink-0">
               <div className="relative h-80 sm:h-[440px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src={images[1]}
+                  src={images[1]!}
                   alt="Rušenje zidova Niš"
                   fill
                   className="object-cover"
