@@ -93,7 +93,7 @@ export default function RusenjePage() {
       <div className="relative bg-navy pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={images[0]}
+            src={images[0]!}
             alt="Rušenje i razbijanje Niš"
             fill
             className="object-cover opacity-20"
