@@ -28,7 +28,7 @@ const services = [
     čime sprečavamo buduće probleme sa vlagom i curenjem.`,
     features: [
       "Postavljanje keramičkih pločica svih formata",
-      "Granit, mermer i prirodni kamen",
+
       "Mozaik i dekorativne obloge",
       "Hidroizolacija mokrih čvorova",
       "Sečenje i obrada posebnih oblika",
@@ -55,7 +55,6 @@ const services = [
       "Hidromasažne kade i tuševi",
       "Kanalizacione instalacije",
       "Otklanjanje curenja i havarija",
-      "Radijatorsko grejanje",
     ],
     image: "/2150721533.webp",
   },
@@ -73,10 +72,7 @@ const services = [
       "Razvodne table i zaštitni aparati",
       "Unutrašnje i spoljne utičnice i sklopke",
       "LED i klasično osvetljenje",
-      "Interfoni i video interfoni",
-      "Pametni sistemi (smart home)",
       "Ugradnja klima uređaja",
-      "Atest elektroinstalacija",
     ],
     image: "/7329.webp",
   },

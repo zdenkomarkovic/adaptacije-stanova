@@ -45,7 +45,7 @@ const services = [
     title: "Elektroinstalacije",
     description:
       "Projektovanje i izvođenje elektroinstalacija po važećim standardima. Razvodni ormani, utičnice, osvetljenje, interfoni i pametni sistemi.",
-    features: ["Novi razvod struje", "Osvetljenje", "Razvodni ormani", "Pametne instalacije"],
+    features: ["Novi razvod struje", "Osvetljenje", "Razvodni ormani"],
     image: "/16570.webp",
     href: "/usluge#struja",
   },
@@ -83,7 +83,7 @@ const services = [
     title: "Keramičarski Radovi",
     description:
       "Postavljanje keramičkih pločica, granita i mozaika u kupatilima, kuhinjama i na terasama. Precizna obrada spojeva i vrhunski završni detalji.",
-    features: ["Kupatila i kuhinje", "Terase i hodnike", "Granit i mozaik", "Hidroizolacija"],
+    features: ["Kupatila i kuhinje", "Terase i hodnike", "Hidroizolacija"],
     image: "/IMG-4d76fc00e9f08992092d17882ea64ba6-V.webp",
     href: "/usluge#keramika",
   },
