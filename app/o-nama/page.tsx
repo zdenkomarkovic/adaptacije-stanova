@@ -7,7 +7,8 @@ import { FadeUp, SlideIn, StaggerContainer, StaggerItem } from "@/components/sha
 export const metadata = buildMetadata({
   title: "O Nama",
   description:
-    "Upoznajte tim adaptacije-stanova.com. Više od 10 godina iskustva u renoviranju stanova i kupatila u Srbiji. Kvalitet, pouzdanost i poštovanje rokova.",
+    "Upoznajte naš tim. Više od 10 godina iskustva u adaptacijama stanova i renoviranju kupatila u Nišu. Kvalitet, pouzdanost i poštovanje rokova.",
+  url: "https://adaptacijastanovanis.com/o-nama",
 });
 
 const values = [

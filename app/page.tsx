@@ -7,9 +7,10 @@ import CTABanner from "@/components/home/CTABanner";
 import GallerySection from "@/components/home/GallerySection";
 
 export const metadata = buildMetadata({
-  title: "Adaptacije Stanova i Renoviranje Kupatila",
+  title: "Adaptacije Stanova i Renoviranje Kupatila Niš",
   description:
-    "Profesionalne adaptacije stanova i renoviranje kupatila u Srbiji. Keramika, voda, elektrika, moler – sistem ključ u ruke. Besplatna procena.",
+    "Profesionalne adaptacije stanova i renoviranje kupatila u Nišu. Keramika, voda, elektrika, moler – sistem ključ u ruke. Besplatna procena na terenu.",
+  url: "https://adaptacijastanovanis.com",
 });
 
 export default function HomePage() {

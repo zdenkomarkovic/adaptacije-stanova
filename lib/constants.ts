@@ -3,10 +3,10 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const SITE_NAME =
-  process.env.NEXT_PUBLIC_SITE_NAME ?? "Adaptacije Stanova";
+  process.env.NEXT_PUBLIC_SITE_NAME ?? "Adaptacije Stanova Niš";
 
 export const SITE_DESCRIPTION =
-  "Profesionalne adaptacije stanova i renoviranje kupatila. Keramika, voda i kanalizacija, elektroinstalacije, molerski i gipsarski radovi. Sistem ključ u ruke.";
+  "Profesionalne adaptacije stanova i renoviranje kupatila u Nišu. Keramika, voda i kanalizacija, elektroinstalacije, molerski i gipsarski radovi. Sistem ključ u ruke. Besplatna procena.";
 
 export const CONTACT = {
   phone: "063/723-9440",

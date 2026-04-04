@@ -8,6 +8,7 @@ export const metadata = buildMetadata({
   title: "Rušenje i Razbijanje — Niš",
   description:
     "Profesionalno rušenje i razbijanje pločica, zidova, kupatila, dvorišta, asfalta i manjih i većih objekata u Nišu. Brzo, povoljno, profesionalnim mašinama.",
+  url: "https://adaptacijastanovanis.com/rusenje",
 });
 
 const images = [

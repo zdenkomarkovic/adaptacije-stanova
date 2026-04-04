@@ -11,9 +11,10 @@ import {
 } from "@/components/shared/AnimateIn";
 
 export const metadata = buildMetadata({
-  title: "Usluge",
+  title: "Usluge — Adaptacija Stanova Niš",
   description:
-    "Kompletne usluge adaptacije stanova: keramičarski radovi, voda i kanalizacija, elektroinstalacije, molersko-gipsarski radovi. Sistem ključ u ruke.",
+    "Kompletne usluge adaptacije stanova u Nišu: keramičarski radovi, voda i kanalizacija, elektroinstalacije, molersko-gipsarski radovi. Sistem ključ u ruke.",
+  url: "https://adaptacijastanovanis.com/usluge",
 });
 
 const services = [

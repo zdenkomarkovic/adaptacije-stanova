@@ -6,7 +6,8 @@ import { FadeUp, SlideIn, StaggerContainer, StaggerItem } from "@/components/sha
 export const metadata = buildMetadata({
   title: "Kontakt",
   description:
-    "Kontaktirajte nas za besplatnu procenu adaptacije stana ili renoviranja kupatila. Telefon, Viber, WhatsApp: 063/723-9440 ili 063/460-010.",
+    "Kontaktirajte nas za besplatnu procenu adaptacije stana ili renoviranja kupatila u Nišu. Telefon, Viber, WhatsApp: 063/723-9440 ili 063/460-010.",
+  url: "https://adaptacijastanovanis.com/kontakt",
 });
 
 const contactCards = [
